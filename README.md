@@ -8,3 +8,4 @@ GitHub codespaces の練習にもする
 * VS2019 preview をダウンロードして、インストール
 
 ## VS2019 preview でうまくいかないぞ
+ときどき確認、という感じか。
