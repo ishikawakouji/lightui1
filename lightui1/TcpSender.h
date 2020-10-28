@@ -131,8 +131,6 @@ public:
             return 0;
         }
 
-        flagConnecting = false;
-
         // shutdown the connection since no more data will be sent
         iResult = shutdown(ConnectSocket, SD_SEND);
         if (iResult == SOCKET_ERROR) {
@@ -151,6 +149,8 @@ public:
         }
 
         WSACleanup();
+
+        flagConnecting = false;
 
         return 0;
 
