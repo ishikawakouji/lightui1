@@ -95,7 +95,7 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
     // Create window with graphics context
-    GLFWwindow* window = glfwCreateWindow(glfwWidth, glfwHeight, "VI camera Dear ImGui", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(glfwWidth, glfwHeight, "Light Dear ImGui", NULL, NULL);
 
     if (window == NULL)
         return 1;

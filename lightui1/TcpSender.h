@@ -137,6 +137,8 @@ public:
             wprintf(L"shutdown failed with error: %d\n", WSAGetLastError());
             closesocket(ConnectSocket);
             WSACleanup();
+
+            flagConnecting = false;
             return 1;
         }
 
@@ -145,6 +147,8 @@ public:
         if (iResult == SOCKET_ERROR) {
             wprintf(L"close failed with error: %d\n", WSAGetLastError());
             WSACleanup();
+
+            flagConnecting = false;
             return 1;
         }
 
